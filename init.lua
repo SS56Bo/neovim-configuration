@@ -1,4 +1,6 @@
-require 'options'
+require 'core.options'
+require 'core.keymaps'
+
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not(vim.uv or vim.loop).fs_stat(lazypath) then 
 	local lazyrepo = 'https://github.com/folke/lazy.nvim.git'
@@ -19,5 +21,13 @@ require('lazy').setup({
 			-- not strictly required, but recommended     
 			"MunifTanjim/nui.nvim",
 		}
+	},
+	{
+  		"folke/tokyonight.nvim",
+  		lazy = false,
+  		priority = 1000,
+  		opts = {},
 	}
 })
+
+vim.cmd[[colorscheme tokyonight-night]]
