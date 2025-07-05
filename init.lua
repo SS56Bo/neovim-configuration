@@ -22,12 +22,18 @@ require('lazy').setup({
 			"MunifTanjim/nui.nvim",
 		}
 	},
-	{
-  		"folke/tokyonight.nvim",
-  		lazy = false,
-  		priority = 1000,
-  		opts = {},
-	}
+	-- {
+  	-- 	"folke/tokyonight.nvim",
+  	-- 	lazy = false,
+  	-- 	priority = 1000,
+  	-- 	opts = {},
+	-- },
+	{ 
+		"EdenEast/nightfox.nvim",
+		lazy=false,
+		priority = 1000,
+		opts={}
+ 	} 
 })
 
-vim.cmd[[colorscheme tokyonight-night]]
+vim.cmd('colorscheme terafox')
