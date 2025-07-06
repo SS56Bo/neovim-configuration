@@ -8,5 +8,8 @@ vim.keymap.set({'n', 'v'}, '<Space>', '<Nop>', {silent = true})
 -- FOR CONCISE BEHAVIOUR
 local opts = {noremap = true, silent = true}
 
--- FOR SETTING UP SAVE FILE USING CTRL + S
+-- SAVE FILE USING CTRL + S
+vim.keymap.set('n', '<C-s>', '<cmd> w <CR>', opts)
 
+-- SAVE FILE WITHOUT AUTO-FORMATTING
+vim.keymap.set('n', '<leader>sn', '<cmd>noautocmd w <CR>', opts)
