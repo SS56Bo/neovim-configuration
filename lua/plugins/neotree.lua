@@ -10,6 +10,8 @@ return {
     opts = {},
 
     config = function()
-        vim.keymap.set('n', '<leader>e', '<cmd>Neotree toggle position=left<CR>', { noremap = true, silent = true })  -- Open file explorer
+        vim.keymap.set('n', '<leader>e', function()
+            require("neo-tree.command").execute({ toggle = true, position = "left", reveal = true })
+          end, { noremap = true, silent = true })
     end,
 }
