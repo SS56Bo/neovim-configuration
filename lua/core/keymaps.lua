@@ -1,4 +1,4 @@
-- Set Leader Key
+-- Set Leader Key
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -58,6 +58,14 @@ vim.keymap.set('n', '<leader>tp', ':tabp<CR>', opts) --  go to previous tab
 -- delete single character without copying into register
 vim.keymap.set('n', 'x', '"_x', opts)
 
+-- Toggle line wrapping
+vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', opts)
 
+-- Stay in indent mode
+vim.keymap.set('v', '<', '<gv', opts)
+vim.keymap.set('v', '>', '>gv', opts)
+
+-- Keep last yanked when pasting
+vim.keymap.set('v', 'p', '"_dP', opts)
 
 
