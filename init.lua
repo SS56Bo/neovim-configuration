@@ -1,6 +1,6 @@
 require 'core.options'
 require 'core.keymaps'
-
+vim.opt.termguicolors = true
 
 -- FOR LAZY.VIM INITIAL SETUP
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
@@ -14,8 +14,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-    require 'plugins.neotree',
-    require 'plugins.colortheme'
+    require 'plugins.neotree',  -- Neotree setup
+    require 'plugins.colortheme', -- Color theme setup
+    require 'plugins.bufferline', -- bufferline setup
+    require 'plugins.lualine' -- statusline setup
 })
 
 vim.cmd('colorscheme duskfox')

@@ -1,6 +1,6 @@
 vim.wo.number = true  -- Enables Line number --
 vim.o.relativenumber = true  -- Enables Relative Line Number
-vim.o.wrap = false -- Displays line as one long line (default: true)
+vim.o.wrap = true -- Displays line as one long line (default: true)
 vim.o.clipboard = 'unnamedplus' -- Sync clipboard between Neovim and Linux
 vim.o.autoindent = true -- Enables Auto-indent (default: true)
 vim.o.linebreak = true -- Companion to wrap

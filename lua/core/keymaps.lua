@@ -12,7 +12,7 @@ local opts = {noremap = true, silent = true}
 vim.keymap.set('n', '<C-s>', '<Esc><cmd> w <CR>', opts)
 
 -- SAVE FILE WITHOUT AUTO-FORMATTING
-vim.keymap.set('n', '<leader>sn', '<cmd>noautocmd w <CR>', opts)
+vim.keymap.set('n', '<leader>sn', '<Esc><cmd>noautocmd w <CR>', opts)
 
 -- QUIT NEOVIM
 vim.keymap.set('n', '<C-q>', '<Esc><cmd> q <CR>', opts)
