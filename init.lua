@@ -14,28 +14,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-	{   
-		"nvim-neo-tree/neo-tree.nvim",   
-		branch = "v3.x",   
-		dependencies = {     
-	        	"nvim-lua/plenary.nvim",     
-			"nvim-tree/nvim-web-devicons", 
-			-- not strictly required, but recommended     
-			"MunifTanjim/nui.nvim",
-		}
-	},
-	-- {
-  	-- 	"folke/tokyonight.nvim",
-  	-- 	lazy = false,
-  	-- 	priority = 1000,
-  	-- 	opts = {},
-	-- },
-	{ 
-		"EdenEast/nightfox.nvim",
-		lazy=false,
-		priority = 1000,
-		opts={}
- 	} 
+    require 'plugins.neotree',
+    require 'plugins.colortheme'
 })
 
 vim.cmd('colorscheme duskfox')

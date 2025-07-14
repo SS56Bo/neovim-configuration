@@ -68,4 +68,7 @@ vim.keymap.set('v', '>', '>gv', opts)
 -- Keep last yanked when pasting
 vim.keymap.set('v', 'p', '"_dP', opts)
 
+-- YANK TO SYSTEM CLIPBOARD
+vim.keymap.set('n', '<leader>y', '+yy', opts)
+vim.keymap.set('n', '<leader>p', '"+p', opts)
 
