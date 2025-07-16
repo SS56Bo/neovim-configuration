@@ -19,6 +19,7 @@ require('lazy').setup({
     require 'plugins.bufferline', -- bufferline setup
     require 'plugins.lualine', -- statusline setup
     require 'plugins.treesitter', -- treesitter setup
+    require 'plugins.telescope' -- telescope setup
 })
 
 vim.cmd('colorscheme duskfox')
