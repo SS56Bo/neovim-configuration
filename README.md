@@ -15,3 +15,9 @@ Modifications to be done:
 - Terminal
 - Splash Screen
 - Telescope
+
+Telescope --> Telescope is a highly extendable fuzzy finder plugin. It allows us to quickly search. preview, and open files, buffers, help tags, git commits, etc.
+
+Buffer in Neovim --> A buffer is an in-memory representation of a file or text. It's where editing happens before you save anything to disk. 
+
+
