@@ -19,3 +19,5 @@ vim.o.splitright = true -- Force all vertical splits to go to the right of curre
 vim.o.numberwidth = 4 -- Set number column width to 4 (default: 4)
 vim.o.breakindent = true -- Enable break indent (default: false)
 vim.o.updatetime = 250 -- Decrease update time (default: 4000)
+vim.o.swapfile = false -- removes swapfile feature
+

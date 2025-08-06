@@ -12,7 +12,16 @@ return {
 
             config = function()
                 require("mason-lspconfig").setup({
-                    ensure_installed = { "lua_ls" }
+                    ensure_installed = { 
+                        "lua_ls", 
+                        "bashls",
+                        "cmake",
+                        "jsonls",
+                        "html",
+                        "rust_analyzer",
+                        "ts_ls",
+                        "pylsp"
+                    }
                 })
             end
         },
