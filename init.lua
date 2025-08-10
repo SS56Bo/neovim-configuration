@@ -22,7 +22,9 @@ require('lazy').setup({
     require 'plugins.treesitter', -- treesitter setup
     require 'plugins.telescope', -- telescope setup
     require 'plugins.lsp', -- lsp plugin
-    require 'plugins.autoformat' -- autoformat plugin
+    require 'plugins.autoformat', -- autoformat plugin
+    require 'plugins.gitcase', -- gitcase config
+    require 'plugins.alpha', -- screen greeter
 })
 
 vim.cmd('colorscheme duskfox')
