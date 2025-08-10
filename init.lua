@@ -18,6 +18,7 @@ require('lazy').setup({
     require 'plugins.colortheme', -- Color theme setup
     require 'plugins.bufferline', -- bufferline setup
     require 'plugins.lualine', -- statusline setup
+    require 'plugins.autocompletion', -- automcpletion setup [more setup required]
     require 'plugins.treesitter', -- treesitter setup
     require 'plugins.telescope', -- telescope setup
     require 'plugins.lsp' -- lsp plugin
