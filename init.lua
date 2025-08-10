@@ -21,7 +21,8 @@ require('lazy').setup({
     require 'plugins.autocompletion', -- automcpletion setup [more setup required]
     require 'plugins.treesitter', -- treesitter setup
     require 'plugins.telescope', -- telescope setup
-    require 'plugins.lsp' -- lsp plugin
+    require 'plugins.lsp', -- lsp plugin
+    require 'plugins.autoformat' -- autoformat plugin
 })
 
 vim.cmd('colorscheme duskfox')
