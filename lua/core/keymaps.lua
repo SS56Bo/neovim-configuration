@@ -72,3 +72,5 @@ vim.keymap.set('v', 'p', '"_dP', opts)
 vim.keymap.set('n', '<leader>y', '+yy', opts)
 vim.keymap.set('n', '<leader>p', '"+p', opts)
 
+-- MASON Keymap
+vim.keymap.set('n', '<C-l>', ':Mason', opts)

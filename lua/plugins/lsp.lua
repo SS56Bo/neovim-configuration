@@ -27,6 +27,8 @@ return {
                         "cmake",
                         "jsonls",
                         "html",
+                        "clangd",
+                        "java_language_server",
                         "rust_analyzer",
                         "ts_ls",
                         "pylsp"
