@@ -292,7 +292,7 @@ return {
               ['gg'] = 'git_commit_and_push',
               ['o'] = { 'show_help', nowait = false, config = { title = 'Order by', prefix_key = 'o' } },
               ['oc'] = { 'order_by_created', nowait = false },
-        v      ['od'] = { 'order_by_diagnostics', nowait = false },
+              ['od'] = { 'order_by_diagnostics', nowait = false },
               ['om'] = { 'order_by_modified', nowait = false },
               ['on'] = { 'order_by_name', nowait = false },
               ['os'] = { 'order_by_size', nowait = false },
@@ -305,6 +305,6 @@ return {
       vim.cmd [[nnoremap \ :Neotree reveal<cr>]]
       vim.keymap.set('n', '<leader>e', ':Neotree toggle position=left<CR>', { noremap = true, silent = true }) -- focus file explorer
       vim.keymap.set('n', '<leader>ngs', ':Neotree float git_status<CR>', { noremap = true, silent = true })-- open git status window 
-      vim.keymap.set('n', '<BS>', ':Neotree focus', {noremap = true, silent = true }) -- Focus for Neotree
+      vim.keymap.set('n', '<BS>', ':Neotree focus<CR>', {noremap = true, silent = true }) -- Focus for Neotree
     end,
   }
