@@ -31,7 +31,8 @@ return {
                         "java_language_server",
                         "rust_analyzer",
                         "ts_ls",
-                        "pylsp"
+                        "pylsp",
+                        "harper_ls"
                     }
                 })
             end

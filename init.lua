@@ -27,6 +27,7 @@ require('lazy').setup({
     require 'plugins.alpha', -- screen greeter
     require 'plugins.indent',
     require 'plugins.misc',
+    require 'plugins.terminal'
 })
 
 vim.cmd('colorscheme duskfox')
