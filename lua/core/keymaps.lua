@@ -69,8 +69,11 @@ vim.keymap.set('v', '>', '>gv', opts)
 vim.keymap.set('v', 'p', '"_dP', opts)
 
 -- YANK TO SYSTEM CLIPBOARD
-vim.keymap.set('n', '<leader>y', '+yy', opts)
+vim.keymap.set('n', '<leader>y', '"+y', opts)
 vim.keymap.set('n', '<leader>p', '"+p', opts)
 
--- MASON Keymap
-vim.keymap.set('n', '<C-l>', ':Mason', opts)
+-- Mason Keymap
+vim.keymap.set('n', '<leader>m', ':Mason<CR>', opts)
+
+-- Select All 
+vim.keymap.set('n', '<C-a>', 'ggVG', opts)
