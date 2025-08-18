@@ -32,7 +32,8 @@ return {
                         "rust_analyzer",
                         "ts_ls",
                         "pylsp",
-                        "harper_ls"
+                        "harper_ls",
+                        "tinymist",
                     }
                 })
             end
