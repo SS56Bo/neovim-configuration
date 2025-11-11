@@ -2,7 +2,7 @@
 This README is my personal manual. 
 
 ## Table of Contents
-1. [Keymaps](#-keymaps)
+1. [Keymaps](#keymaps)
 2. [Neotree](#-neotree)
 3. [Telescope](#-telescope)
 4. [Lualine](#-lualine)
